@@ -1,0 +1,15 @@
+{
+    "name": "Remove Python 2 docs",
+    "version": "1.0",
+    "description": "Remove Python 2 documentation from Google search results",
+    "manifest_version": 2,
+    "content_scripts": [
+      {
+        "matches": ["http://www.google.com/*", "https://www.google.com/*"],
+        "js": ["filter.js"]
+      }
+    ],
+    "permissions": [
+      "tabs", "http://www.google.com/*", "https://www.google.com/*"
+    ]
+}
